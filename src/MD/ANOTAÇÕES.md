@@ -1,6 +1,11 @@
-# **Atributos HTML**
+<div align="center">
+<a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="70" align="center"></a>
 
-## Índice
+# **Atributos HTML**
+### `Principis Atributos HTML `
+</div>
+
+## :bookmark_tabs: Índice
 * [1. O que são Atributos?](#1-o-que-são-atributos-html)
     * [2. Atributos comuns](#2-atributos-comuns)
     * [2.1. ID](#21-id)
@@ -26,19 +31,17 @@
     * [4.5. Selected](#45-selected-em-)
 * [5. Boas Práticas](#5-boas-práticas)
 
-## Ferramentas utilizadas no desenvolvimento
+## :computer:	Ferramentas utilizadas no desenvolvimento
 <div align="auto">
-    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/3804386a-094d-42de-8a5d-f4dfb033ffba" alt="js" width="50"></a>
-    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/99565e92-5ce7-4298-ac67-95801f113f9f" alt="ts" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="70" align="center"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/64486d67-8973-4b62-bdfc-212cf9f16709" alt="md" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/d3813ef4-1409-40c9-9bfb-6e988f79b2c8" alt="Git" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b03adba8-e155-4555-8737-2afaf449620d" alt="Node" width="50"></a>
 </div>
 
-# Atributos HTML
+## :books:	Conteúdo
 
 ## 1. O que são Atributos HTML?
-
 Os atributos HTML são usados para fornecer informações adicionais sobre elementos HTML. Eles são sempre especificados na tag inicial e geralmente vêm em pares de nome/valor, como `name="value"`.
 
 ## 2. Atributos Comuns
@@ -49,40 +52,40 @@ Define um identificador único para um elemento HTML.
 <div id="mainContent"></div>
 ```
 
-### 2.2 class
+### 2.2 `class`
 Atribui uma ou mais classes a um elemento para estilização e manipulação com CSS e JavaScript.
 
 ```html
 <p class="intro text-primary"></p>
 ```
 
-### 2.3 style
+### 2.3 `style`
 Adiciona estilo CSS diretamente a um elemento.
 
 ```html
 <h1 style="color: blue; text-align: center;"></h1>
 ```
 
-### 2.4 title
+### 2.4 `title`
 Fornece informações adicionais sobre um elemento (geralmente exibidas como uma dica de ferramenta).
 
 ```html
 <abbr title="Hypertext Markup Language">HTML</abbr>
 ```
 
-### 2.5 href
+### 2.5 `href`
 Especifica o URL de uma página para a qual o link deve ir.
 
 ```html
 <a href="https://www.example.com">Visite nosso site</a>
 ```
-### 2.6 src
+### 2.6 `src`
 Especifica o URL de uma imagem ou recurso incorporado.
 
 ```html
 <img src="image.jpg" alt="Descrição da imagem">
 ```
-### 2.7 alt
+### 2.7 `alt`
 Fornece texto alternativo para uma imagem se a imagem não puder ser exibida.
 
 ```html
@@ -90,22 +93,22 @@ Fornece texto alternativo para uma imagem se a imagem não puder ser exibida.
 <img src="image.jpg" alt="Descrição da imagem">
 ```
 
-### 2.8 type
-Define o tipo de elemento (geralmente usado em elementos <input> e <button>).
+### 2.8 `type`
+Define o tipo de elemento (geralmente usado em elementos `<input>` e `<button>`).
 
 ```html
 
 <input type="text">
 ```
 
-### 2.9 value
-Especifica o valor de um elemento (geralmente usado em elementos <input>, <button>, e <option>).
+### 2.9 `value`
+Especifica o valor de um elemento (geralmente usado em elementos `<input>`, `<button>`, e `<option>`).
 
 ```html
 <input type="text" value="Digite seu nome">
 ```
 
-### 2.10 placeholder
+### 2.10 `placeholder`
 Fornece um texto de espaço reservado para um campo de entrada.
 
 ```html
@@ -114,34 +117,34 @@ Fornece um texto de espaço reservado para um campo de entrada.
 
 ## 3. Atributos Globais
 
-### 3.1 data-*
+### 3.1 `data-*`
 Usado para armazenar dados personalizados privados para a página ou aplicativo.
 
 ```html
 <div data-user-id="12345"></div>
 ```
 
-### 3.2 contenteditable
+### 3.2 `contenteditable`
 Indica se o conteúdo de um elemento é editável ou não.
 
 ```html
 <div contenteditable="true">Este texto pode ser editado pelo usuário.</div>
 ```
 
-### 3.3 hidden
+### 3.3 `hidden`
 Oculta um elemento.
 
 ```html
 <div hidden>Este conteúdo está oculto.</div>
 ```
 
-### 3.4 tabindex
+### 3.4 `tabindex`
 Especifica a ordem de tabulação de um elemento.
 
 ```html
 <button tabindex="1">Primeiro Botão</button>
 ```
-### 3.5 aria-*
+### 3.5 `aria-*`
 Atributos usados para melhorar a acessibilidade de elementos.
 
 ```html
@@ -150,35 +153,35 @@ Atributos usados para melhorar a acessibilidade de elementos.
 
 ## 4. Atributos Específicos de Elementos
 
-### 4.1 colspan (em <td> e <th>)
+### 4.1 `colspan (em <td> e <th>)`
 Especifica o número de colunas que uma célula deve abranger.
 
 ```html
 <td colspan="2">Célula que abrange duas colunas</td>
 ```
 
-### 4.2 rowspan (em <td> e <th>)
+### 4.2 `rowspan` (em `<td>` e `<th>`)
 Especifica o número de linhas que uma célula deve abranger.
 
 ```html
 <td rowspan="2">Célula que abrange duas linhas</td>
 ```
 
-### 4.3 disabled (em <input>, <button>, <select>, etc.)
+### 4.3 `disabled` (em `<input>`, `<button>`, `<select>`, etc.)
 Desabilita um elemento de formulário.
 
 ```html
 <button disabled>Não pode ser clicado</button>
 ```
 
-### 4.4 checked (em <input> do tipo checkbox ou radio)
+### 4.4 `checked` (em <input> do tipo checkbox ou radio)
 Indica que uma entrada de caixa de seleção ou rádio deve ser pré-selecionada.
 
 ```html
 <input type="checkbox" checked>
 ```
 
-### 4.5 selected (em <option>)
+### 4.5 `selected` (em `<option>`)
 Indica que uma opção deve ser pré-selecionada em uma lista suspensa.
 
 ```html
@@ -192,7 +195,7 @@ Consistência e clareza: Use nomes de atributos que sejam claros e consistentes 
 Acessibilidade: Sempre considere a acessibilidade ao usar atributos, especialmente aqueles que afetam a navegação e a leitura de tela.
 Este guia cobre os conceitos básicos e alguns atributos comuns, mas há muitos outros atributos específicos para diferentes elementos HTML.
 
-## Contato
+## :telephone_receiver: Contato
 Para saber mais sobre meus trabalhos, entre em contato comigo através do <a href="https://www.linkedin.com/in/jfeliperamos/">LinkedIn</a> ou visite meu <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html">GitHub.</a> 
 
 <div align=center>

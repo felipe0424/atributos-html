@@ -1,261 +1,201 @@
-# **FORMS HTML**
+<div align="center">
+<a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="70" align="center"></a>
 
-## Índice
-* [1. Form](#1-definir-o-documento-html)
-* [2. Cabeçalho e Parágrafos](#2-cabeçalhos-e-parágrafos)
-* [3. Definir Parágrafo](#3-definir-um-parágrafo)
-* [4. Botões *Buttons*](#4-botão)
-* [5. Formatação de Texto](#5-formatação-de-texto)
-* [6. Listas](#6-listas)
-* [7. Links e Imagens](#7-links-e-imagens)
-* [8. Tabelas](#8-tabelas)
-* [9. Formulários](#9-formulários)
-* [10. Seções e Agrupamentos](#10-seções-e-agrupamentos)
-* [11. Outras Tags](#11-outros)
+# **Atributos HTML**
+### `Principis Atributos HTML `
+</div>
 
-## Ferramentas utilizadas no desenvolvimento
+## :bookmark_tabs: Índice
+* [1. O que são Atributos?](#1-o-que-são-atributos-html)
+    * [2. Atributos comuns](#2-atributos-comuns)
+    * [2.1. ID](#21-id)
+    * [2.2. Class ](#22-class)
+    * [2.3. Style](#23-style)
+    * [2.4. Title](#24-title)
+    * [2.5. Href](#25-href)
+    * [2.6. Src](#26-src)
+    * [2.7. Alt](#27-alt)
+    * [2.8. Type](#28-type)
+    * [2.9. Value](#29-value)
+* [3. Atributos Globais](#3-atributos-globais)
+    * [3.1. Data](#31-data-)
+    * [3.2. Contenteditable](#32-contenteditable)
+    * [3.3. Hidden](#33-hidden)
+    * [3.4. Tabindex](#34-tabindex)
+    * [3.5. Aria](#35-aria-)
+* [4. Atributos Específicos](#4-atributos-específicos-de-elementos)
+    * [4.1. Colspan](#41-colspan-em--e-)
+    * [4.2. Rowspan](#42-rowspan-em--e-)
+    * [4.3. Disable](#43-disabled-em----etc)
+    * [4.4. Checked](#44-checked-em--do-tipo-checkbox-ou-radio)
+    * [4.5. Selected](#45-selected-em-)
+* [5. Boas Práticas](#5-boas-práticas)
+
+## :computer:	Ferramentas utilizadas no desenvolvimento
 <div align="auto">
-    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/3804386a-094d-42de-8a5d-f4dfb033ffba" alt="js" width="50"></a>
-    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/99565e92-5ce7-4298-ac67-95801f113f9f" alt="ts" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="70" align="center"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/64486d67-8973-4b62-bdfc-212cf9f16709" alt="md" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/d3813ef4-1409-40c9-9bfb-6e988f79b2c8" alt="Git" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b03adba8-e155-4555-8737-2afaf449620d" alt="Node" width="50"></a>
 </div>
 
-### 1. Form
-Para iniciar o novo documento digite `<form action="">` html* ou *!* e depois tecle *Enter* que iniciará.
- 
-```r
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Título da Página</title>
-</head>
-<body>
-    [Conteúdo da página]
-</body>
-</html>
+## :books:	Conteúdo
+
+## 1. O que são Atributos HTML?
+Os atributos HTML são usados para fornecer informações adicionais sobre elementos HTML. Eles são sempre especificados na tag inicial e geralmente vêm em pares de nome/valor, como `name="value"`.
+
+## 2. Atributos Comuns
+
+### 2.1 `id`
+Define um identificador único para um elemento HTML.
+```html
+<div id="mainContent"></div>
 ```
 
-### 2. Cabeçalhos e Parágrafos
-Definem cabeçalhos, sendo *h1* o mais importante e *h6* o menos importante.
+### 2.2 `class`
+Atribui uma ou mais classes a um elemento para estilização e manipulação com CSS e JavaScript.
 
-```r
-<h1>Cabeçalho 1</h1>
-<h2>Cabeçalho 2</h2>
-<h3>Cabeçalho 3</h3>
-<h4>Cabeçalho 4</h4>
-<h5>Cabeçalho 5</h5>
-<h6>Cabeçalho 6</h6>
+```html
+<p class="intro text-primary"></p>
 ```
 
-### 3. Definir um parágrafo
-```r
-<p>Este é um parágrafo de texto.</p>
+### 2.3 `style`
+Adiciona estilo CSS diretamente a um elemento.
+
+```html
+<h1 style="color: blue; text-align: center;"></h1>
 ```
 
-### 4. Botão
-```r
-<button type="button">
-    Clique Aqui
-</button>
+### 2.4 `title`
+Fornece informações adicionais sobre um elemento (geralmente exibidas como uma dica de ferramenta).
+
+```html
+<abbr title="Hypertext Markup Language">HTML</abbr>
 ```
 
-### 5. Formatação de Texto
-* Negrito
-```r
-<b>
-    Texto em negrito
-</b>
+### 2.5 `href`
+Especifica o URL de uma página para a qual o link deve ir.
+
+```html
+<a href="https://www.example.com">Visite nosso site</a>
 ```
-* Itálico
-```r
-<i>
-    Texto em itálico
-</i>
+### 2.6 `src`
+Especifica o URL de uma imagem ou recurso incorporado.
+
+```html
+<img src="image.jpg" alt="Descrição da imagem">
 ```
-* Destaque Negrito
-```r
-<p>
-    Texto em <strong>destaque</strong>
-</p>
-```
-* Span
-```r
-<p>
-    Texto <span>importante</span>
-</p>
-```
-* Small
-```r
-<p>
-    Texto <small>importante</small>
-</p>
+### 2.7 `alt`
+Fornece texto alternativo para uma imagem se a imagem não puder ser exibida.
+
+```html
+
+<img src="image.jpg" alt="Descrição da imagem">
 ```
 
-### 6. Listas
-* Lista não ordenada
+### 2.8 `type`
+Define o tipo de elemento (geralmente usado em elementos `<input>` e `<button>`).
 
-```r
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
-```
-* Lista ordenada
-```r
-<ol>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ol>
+```html
+
+<input type="text">
 ```
 
-### 7. Links e Imagens
-* Hiperlink
-```r
-<a href="https://www.exemplo.com" target="_blank" title="Visite o Exemplo">Clique Aqui</a>
-```
-* Imagem
-```r
-<img src="caminho/para/imagem.jpg" alt="Descrição da imagem" width="300" height="200">
-```
-* Imagem + Link
-```r
-<a 
-href="https://www.exemplo.com">
-    <img src="caminho/para/imagem.jpg" alt="Descrição da imagem" width="300" height="200">
-</a>
+### 2.9 `value`
+Especifica o valor de um elemento (geralmente usado em elementos `<input>`, `<button>`, e `<option>`).
+
+```html
+<input type="text" value="Digite seu nome">
 ```
 
-### 8. Tabelas
-* Definir uma tabela
-```r
-<table>
-    <thead>
-        <tr>
-            <th>Coluna 1</th>
-            <th>Coluna 2</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-        </tr>
-        <tr>
-            <td>Dado 3</td>
-            <td>Dado 4</td>
-        </tr>
-    </tbody>
-</table>
+### 2.10 `placeholder`
+Fornece um texto de espaço reservado para um campo de entrada.
+
+```html
+<input type="text" placeholder="Digite seu nome">
 ```
 
-### 9. Formulários
-* Definir um formulário
-```r
-<form action="/enviar" method="post">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome">
-    
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem"></textarea>
-    
-    <label for="opcoes">Escolha uma opção:</label>
-    <select id="opcoes" name="opcoes">
-        <option value="opcao1">Opção 1</option>
-        <option value="opcao2">Opção 2</option>
-    </select>
-    
-    <button type="submit">Enviar</button>
-</form>
+## 3. Atributos Globais
+
+### 3.1 `data-*`
+Usado para armazenar dados personalizados privados para a página ou aplicativo.
+
+```html
+<div data-user-id="12345"></div>
 ```
 
-### 10. Seções e Agrupamentos
-* Div (Divisão ou seção)
-```r
-<div class="container">
-    <h2>Conteúdo da Div</h2>
-    <p>Este é um exemplo de uso da tag &lt;div&gt; para agrupar conteúdo.</p>
-</div>
+### 3.2 `contenteditable`
+Indica se o conteúdo de um elemento é editável ou não.
+
+```html
+<div contenteditable="true">Este texto pode ser editado pelo usuário.</div>
 ```
-* Header (Cabeçalho)
-```r
-<header>
-    <h1>Título da Página</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+
+### 3.3 `hidden`
+Oculta um elemento.
+
+```html
+<div hidden>Este conteúdo está oculto.</div>
 ```
-* Footer (Rodapé)
-```r
-<footer>
-    <p>
-    &copy; 2024 Nome da Empresa. Todos os direitos reservados.
-    </p>
-</footer>
+
+### 3.4 `tabindex`
+Especifica a ordem de tabulação de um elemento.
+
+```html
+<button tabindex="1">Primeiro Botão</button>
 ```
-* Section (Seção)
-```r
-<section>
-    <h2>Introdução</h2>
-    <p>Este é um exemplo de uso da tag &lt;section&gt; para agrupar conteúdo relacionado.</p>
-</section>
+### 3.5 `aria-*`
+Atributos usados para melhorar a acessibilidade de elementos.
+
+```html
+<button aria-label="Fechar">X</button>
 ```
-* Nav (Menu de navegação)
-```r
-<nav>
-    <h2>Introdução</h2>
-    <p>Este é um exemplo de uso da tag &lt;section&gt; para agrupar conteúdo relacionado.</p>
-</nav>
+
+## 4. Atributos Específicos de Elementos
+
+### 4.1 `colspan (em <td> e <th>)`
+Especifica o número de colunas que uma célula deve abranger.
+
+```html
+<td colspan="2">Célula que abrange duas colunas</td>
 ```
-* Aticle (Artigo)
-```r
-<article>
-    <h2>Introdução</h2>
-    <p>Este é um exemplo de uso da tag &lt;section&gt; para agrupar conteúdo relacionado.</p>
-</article>
+
+### 4.2 `rowspan` (em `<td>` e `<th>`)
+Especifica o número de linhas que uma célula deve abranger.
+
+```html
+<td rowspan="2">Célula que abrange duas linhas</td>
 ```
-* Aside ()
-```r
-<aside>
-    <h2>Introdução</h2>
-    <p>Este é um exemplo de uso da tag &lt;section&gt; para agrupar conteúdo relacionado.</p>
-</aside>
+
+### 4.3 `disabled` (em `<input>`, `<button>`, `<select>`, etc.)
+Desabilita um elemento de formulário.
+
+```html
+<button disabled>Não pode ser clicado</button>
 ```
-### 11. Outros
-* Script
-```r
-<script>
-    console.log('Olá, mundo!');
-</script>
+
+### 4.4 `checked` (em <input> do tipo checkbox ou radio)
+Indica que uma entrada de caixa de seleção ou rádio deve ser pré-selecionada.
+
+```html
+<input type="checkbox" checked>
 ```
-* Link para CSS
-```r
-<link rel="stylesheet" href="estilos.css">
+
+### 4.5 `selected` (em `<option>`)
+Indica que uma opção deve ser pré-selecionada em uma lista suspensa.
+
+```html
+<option selected>Opção padrão</option>
 ```
-* Metadados
-```r
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Título do site">
-```
-* Estilos embutidos
-```r
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-</style>
-```
-## Contato
+
+## 5. Boas Práticas
+Usar valores válidos e semânticos: Certifique-se de que os valores dos atributos sejam válidos e correspondam ao propósito pretendido.
+Consistência e clareza: Use nomes de atributos que sejam claros e consistentes em todo o código.
+
+Acessibilidade: Sempre considere a acessibilidade ao usar atributos, especialmente aqueles que afetam a navegação e a leitura de tela.
+Este guia cobre os conceitos básicos e alguns atributos comuns, mas há muitos outros atributos específicos para diferentes elementos HTML.
+
+## :telephone_receiver: Contato
 Para saber mais sobre meus trabalhos, entre em contato comigo através do <a href="https://www.linkedin.com/in/jfeliperamos/">LinkedIn</a> ou visite meu <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html">GitHub.</a> 
 
 <div align=center>
