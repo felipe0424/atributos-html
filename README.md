@@ -7,33 +7,33 @@
 
 ## :bookmark_tabs: Índice
 * [1. O que são Atributos?](#1-o-que-são-atributos-html)
-    * [2. Atributos comuns](#2-atributos-comuns)
+* [2. Atributos comuns](#2-atributos-comuns)
     * [2.1. ID](#21-id)
-    * [2.2. Class ](#22-class)
-    * [2.3. Style](#23-style)
-    * [2.4. Title](#24-title)
-    * [2.5. Href](#25-href)
-    * [2.6. Src](#26-src)
-    * [2.7. Alt](#27-alt)
-    * [2.8. Type](#28-type)
-    * [2.9. Value](#29-value)
+    * [2.2. class ](#22-class)
+    * [2.3. style](#23-style)
+    * [2.4. title](#24-title)
+    * [2.5. href](#25-href)
+    * [2.6. src](#26-src)
+    * [2.7. alt](#27-alt)
+    * [2.8. type](#28-type)
+    * [2.9. value](#29-value)
 * [3. Atributos Globais](#3-atributos-globais)
-    * [3.1. Data](#31-data-)
-    * [3.2. Contenteditable](#32-contenteditable)
-    * [3.3. Hidden](#33-hidden)
-    * [3.4. Tabindex](#34-tabindex)
-    * [3.5. Aria](#35-aria-)
+    * [3.1. data](#31-data-)
+    * [3.2. contenteditable](#32-contenteditable)
+    * [3.3. hidden](#33-hidden)
+    * [3.4. tabindex](#34-tabindex)
+    * [3.5. aria](#35-aria-)
 * [4. Atributos Específicos](#4-atributos-específicos-de-elementos)
-    * [4.1. Colspan](#41-colspan-em--e-)
-    * [4.2. Rowspan](#42-rowspan-em--e-)
-    * [4.3. Disable](#43-disabled-em----etc)
-    * [4.4. Checked](#44-checked-em--do-tipo-checkbox-ou-radio)
-    * [4.5. Selected](#45-selected-em-)
+    * [4.1. colspan](#41-colspan-em--e-)
+    * [4.2. rowspan](#42-rowspan-em--e-)
+    * [4.3. disable](#43-disabled-em----etc)
+    * [4.4. checked](#44-checked-em--do-tipo-checkbox-ou-radio)
+    * [4.5. selected](#45-selected-em-)
 * [5. Boas Práticas](#5-boas-práticas)
 
 ## :computer:	Ferramentas utilizadas no desenvolvimento
 <div align="auto">
-    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="70" align="center"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="50" align="center"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/64486d67-8973-4b62-bdfc-212cf9f16709" alt="md" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/d3813ef4-1409-40c9-9bfb-6e988f79b2c8" alt="Git" width="50"></a>
     <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b03adba8-e155-4555-8737-2afaf449620d" alt="Node" width="50"></a>
