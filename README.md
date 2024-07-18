@@ -46,7 +46,7 @@ Os atributos HTML são usados para fornecer informações adicionais sobre eleme
 
 ## 2. Atributos Comuns
 
-### 2.1 `id`
+###         2.1 `id`
 Define um identificador único para um elemento HTML.
 ```html
 <div id="mainContent"></div>
