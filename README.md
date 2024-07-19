@@ -188,6 +188,210 @@ Indica que uma opção deve ser pré-selecionada em uma lista suspensa.
 <option selected>Opção padrão</option>
 ```
 
+## 5. Atributos Opcionais 
+
+*   ### 5.1 `colspan (em <td> e <th>)`
+Especifica o número de colunas que uma célula deve abranger.
+
+```html
+<td colspan="2">Célula que abrange duas colunas</td>
+```
+---
+
+### Atributos Comuns em Diversas Tags HTML
+
+1. **`class`**
+   - Define uma ou mais classes CSS para o elemento.
+   - Usado para aplicar estilos ou selecionar o elemento via JavaScript.
+
+   ```html
+   <div class="container main-content"></div>
+   ```
+
+2. **`id`**
+   - Define um identificador único para o elemento.
+   - Usado para estilos CSS e seleção JavaScript.
+
+   ```html
+   <div id="header"></div>
+   ```
+
+3. **`style`**
+   - Aplica estilos CSS diretamente ao elemento.
+   - Normalmente utilizado para estilos rápidos ou temporários.
+
+   ```html
+   <p style="color: red;">Texto em vermelho</p>
+   ```
+
+4. **`title`**
+   - Fornece uma dica (tooltip) que aparece quando o usuário passa o mouse sobre o elemento.
+
+   ```html
+   <button title="Clique aqui para enviar">Enviar</button>
+   ```
+
+5. **`data-*`**
+   - Atributos personalizados usados para armazenar dados extras no elemento.
+   - Acessíveis via JavaScript.
+
+   ```html
+   <div data-user-id="12345"></div>
+   ```
+
+### Atributos Específicos para Tags Comuns
+
+#### `<a>` (Link)
+
+1. **`href`**
+   - Define a URL de destino do link.
+
+   ```html
+   <a href="https://www.example.com">Visite o exemplo</a>
+   ```
+
+2. **`target`**
+   - Define onde abrir o link.
+   - `_self`: Abre na mesma janela (padrão).
+   - `_blank`: Abre em uma nova aba ou janela.
+   - `_parent`: Abre na janela pai.
+   - `_top`: Abre no topo do frame.
+
+   ```html
+   <a href="https://www.example.com" target="_blank">Abrir em nova aba</a>
+   ```
+
+3. **`rel`**
+   - Define a relação entre o documento atual e o link de destino.
+   - `nofollow`: Informa aos motores de busca para não seguir o link.
+   - `noopener`: Melhora a segurança ao abrir links em nova aba.
+
+   ```html
+   <a href="https://www.example.com" rel="noopener noreferrer">Link seguro</a>
+   ```
+
+#### `<img>` (Imagem)
+
+1. **`src`**
+   - Define o caminho da imagem.
+
+   ```html
+   <img src="imagem.jpg" alt="Descrição da imagem">
+   ```
+
+2. **`alt`**
+   - Fornece texto alternativo para a imagem.
+
+   ```html
+   <img src="imagem.jpg" alt="Descrição da imagem">
+   ```
+
+3. **`width` e `height`**
+   - Define a largura e a altura da imagem.
+
+   ```html
+   <img src="imagem.jpg" alt="Descrição da imagem" width="300" height="200">
+   ```
+
+4. **`loading`**
+   - Especifica como a imagem deve ser carregada.
+   - `lazy`: Carrega a imagem apenas quando está prestes a entrar na tela.
+
+   ```html
+   <img src="imagem.jpg" alt="Descrição da imagem" loading="lazy">
+   ```
+
+#### `<input>` (Campo de Entrada)
+
+1. **`type`**
+   - Define o tipo de campo de entrada.
+   - Exemplos: `text`, `password`, `email`, `number`, `checkbox`, `radio`, etc.
+
+   ```html
+   <input type="text" placeholder="Digite seu nome">
+   ```
+
+2. **`placeholder`**
+   - Texto exibido quando o campo está vazio.
+
+   ```html
+   <input type="text" placeholder="Digite seu nome">
+   ```
+
+3. **`value`**
+   - Define o valor inicial do campo de entrada.
+
+   ```html
+   <input type="text" value="Texto inicial">
+   ```
+
+4. **`name`**
+   - Nome do campo de entrada usado para identificação no envio de formulários.
+
+   ```html
+   <input type="text" name="username">
+   ```
+
+5. **`required`**
+   - Indica que o campo é obrigatório para o envio do formulário.
+
+   ```html
+   <input type="text" required>
+   ```
+
+#### `<button>` (Botão)
+
+1. **`type`**
+   - Define o tipo do botão.
+   - `button`: Botão comum.
+   - `submit`: Envia o formulário.
+   - `reset`: Reseta o formulário.
+
+   ```html
+   <button type="submit">Enviar</button>
+   ```
+
+2. **`disabled`**
+   - Desativa o botão, impedindo que seja clicado.
+
+   ```html
+   <button disabled>Desativado</button>
+   ```
+
+### Exemplo Completo com Diversos Atributos
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Atributos Opcionais</title>
+  <style>
+    .highlight {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="main" class="container">
+    <h1 title="Cabeçalho Principal">Bem-vindo</h1>
+    <p style="font-size: 18px;" data-info="extra info">Este é um parágrafo com estilo inline e um atributo de dados.</p>
+    <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" class="highlight">Visite o exemplo</a>
+    <img src="imagem.jpg" alt="Descrição da imagem" width="300" height="200" loading="lazy">
+    <form>
+      <input type="text" name="username" placeholder="Digite seu nome" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
+```
+
+Esses atributos opcionais fornecem uma ampla gama de funcionalidades para enriquecer e controlar o comportamento e a aparência dos elementos HTML em suas páginas web.
+
+
+---
 ## 5. Boas Práticas
 Usar valores válidos e semânticos: Certifique-se de que os valores dos atributos sejam válidos e correspondam ao propósito pretendido.
 Consistência e clareza: Use nomes de atributos que sejam claros e consistentes em todo o código.
